@@ -1,0 +1,48 @@
+{
+  "name": "peer-confessions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile --force --show-stack-traces",
+    "clean": "npx hardhat clean",
+    "dev": "ts-node-dev --require dotenv/config --respawn --transpile-only src/server.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "compile:deploy": "npx hardhat compile && npx ts-node scripts/deploy.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anatine/zod-openapi": "^2.2.5",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.1",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.11.7",
+    "@types/pg": "^8.11.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "ethers-main": "npm:ethers@^6.10.0",
+    "express": "^4.18.2",
+    "http-terminator": "^3.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.11.5",
+    "uuid": "^9.0.1",
+    "winston": "^3.13.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/cors": "^2.8.17",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/swagger-ui-express": "^4.1.6",
+    "hardhat": "^2.19.4",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}

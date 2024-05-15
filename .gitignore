@@ -1,0 +1,7 @@
+node_modules
+.env
+artifacts
+cache
+pnpm-lock.yaml
+typechain-types
+abi
