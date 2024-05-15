@@ -5,3 +5,4 @@ cache
 pnpm-lock.yaml
 typechain-types
 abi
+logs
